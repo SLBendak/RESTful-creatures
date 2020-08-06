@@ -1,0 +1,10 @@
+<ul><form method="GET" action="/prehistoric_creatures">
+    <label for="typeFilter">Filter by Type:</label>
+    <input id="typeFilter" type="text" name="typeFilter">
+    <input type="submit">
+</form>
+
+    <% myCreatures.forEach((creature)=>{ %> 
+        <li><%= creature.type %> </br></br> <img src="<%= creature.img_url %>"></li>
+    <% }) %>        
+</ul>
